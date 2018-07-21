@@ -26,7 +26,7 @@
 </head>
 
 <body>
-	<!-- Container --> 
+	
 	<div class="container">
 		
 		<!-- Title --> 
@@ -45,24 +45,26 @@
 				<!-- The Random Computer Number --> 
 				<div class ="row">
 					<div class="col-12">
-						<div class="col-12">Match the number</div>
-						<div class ="guess_this_number"></div>
+						<div class="col-12">Match the number
+            <input type="number" class="guess_this_number" value="" disabled></div>
+            </div>
+						
 					</div>
 				</div>
 
 				<!-- Crystals --> 
 				<div class ="row">
-				  	<div class ="col-3 crystal_1"><img src="assets/images/crystal-01.svg"></div>
-				  	<div class ="col-3 crystal_2"><img src="assets/images/crystal-02.svg"></div>
-				  	<div class ="col-3 crystal_3"><img src="assets/images/crystal-03.svg"></div>
-				  	<div class ="col-3 crystal_4"><img src="assets/images/crystal-04.svg"></div>
+				  	<button id="crystal_1" class ="col-3 crystal_1">C1</button>
+				  	<button id="crystal_2" class ="col-3 crystal_2">C2</button>
+				  	<button id="crystal_3" class ="col-3 crystal_3">C3</button>
+				  	<button id="crystal_4" class ="col-3 crystal_4">C4</button>
 				</div>
 
 				<!-- User number --> 
 				<div class ="row">
 					<div class="col-12">
 						<div class="col-12">Your number</div>
-						<div class ="userTotal"></div>
+						<div id="userTotal"></div>
 					</div>
 				</div>
 
@@ -87,6 +89,7 @@
 
 
 	</div>
+
 
 <script src="assets/javascript/game.js"></script>
 
